@@ -1,0 +1,73 @@
+:root {
+  --primary: slateblue;
+  --secondary: darkblue;
+  --ternary: green;
+  --pure: #f7f7ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/leonard-cotte.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-style: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 1.2rem;
+  color: var(--pure);
+}
+
+.clock {
+  display: flex;
+  position: relative;
+}
+
+.clock div {
+  margin-right: 0.8rem;
+}
+
+.clock span {
+  background: var(--primary);
+  opacity: 0.8;
+  width: 7rem;
+  height: 5.5rem;
+  color: var(--pure);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 2rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: var(--secondary);
+  opacity: 0.8;
+}
+.clock #ampm {
+  position: absolute;
+  bottom: 0;
+  width: 3.6rem;
+  height: 2rem;
+  font-size: 20px;
+  background: var(--ternary);
+}

@@ -1,0 +1,81 @@
+:root {
+  --pure: #ffffff;
+  --ternary: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../img/Moon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+h1 {
+  color: var(--pure);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+
+.year {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--pure);
+}
+.countdown {
+  background: var(--ternary);
+  margin: 2rem;
+  color: var(--pure);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countdown div {
+  margin: 0 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: -25px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+.countdown div::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-size: 0.85rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 100%;
+}
+.countdown #day::before {
+  content: "days";
+}
+.countdown #hour::before {
+  content: "hours";
+}
+.countdown #minute::before {
+  content: "minutes";
+}
+.countdown #second::before {
+  content: "seconds";
+}

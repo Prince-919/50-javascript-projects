@@ -16,6 +16,6 @@
 
 [https://aps-month-calender.netlify.app]()
 
-## Project 4 - Rotating image gallery
+## Project 5 - Rotating image gallery
 
 [https://aps-rotating-image-gallery.netlify.app]()

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real time character counter</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Real-time character counter</h1>
+      <div>
+        <label for="">Enter your text below</label><br />
+        <textarea id="textarea" class="textarea" maxlength="250"></textarea>
+      </div>
+      <h3>Calculations</h3>
+      <div class="counter-container">
+        <div class="counter-wrap">
+          <span>Total number of characters</span>
+          <span id="total-counter"></span>
+        </div>
+
+        <div class="divider"></div>
+        <div class="counter-wrap">
+          <span>Remaining</span>
+          <span id="remaining-counter"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

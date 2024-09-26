@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Animated\ Shape.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.calendar-container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.calendar-container .month-name {
+  padding: 10px;
+  color: orangered;
+  margin-bottom: 20px;
+  letter-spacing: 0.9px;
+  font-size: 28px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.calendar-container .day-name {
+  color: #e0e0e0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.calendar-container .day-number {
+  font-size: 60px;
+  color: #ffc971;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.calendar-container .year {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #e0e0e0;
+  font-size: 500;
+}
